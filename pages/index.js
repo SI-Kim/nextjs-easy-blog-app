@@ -11,7 +11,7 @@ export default function Home() {
       <Main/>
       <Sidebar/>
       <Footer />
-      <p>main page!</p>
+      
     </>
   )
 }
