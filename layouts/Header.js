@@ -9,7 +9,7 @@ export default function Header() {
                 empty space for logo
             </div>
             <nav className={styles.navigation}>
-            <item className={styles.item}><Link href="/board1/MainBoard">MainBoard</Link></item>
+            <div className={styles.item}><Link href="/board1/MainBoard">MainBoard</Link></div>
             </nav>
         </header>
     );

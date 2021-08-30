@@ -16,4 +16,8 @@
 .header .navigation .item {
   border: solid 1px;
   border-color: white;
+  vertical-align: middle;
+  max-width: 120px;
+  max-height: 80px;
+  height: 2rem;
 }
