@@ -1,11 +1,12 @@
 .header {
   background-color: #2f4f4f;
   width: 100%;
-  height: 3rem;
+  height: 5rem;
 }
 
 .header .logoZone {
   height: 3rem;
+  line-height: 3rem;
 }
 
 .header .navigation {
@@ -15,8 +16,9 @@
 .header .navigation .item {
   border: solid 1px;
   border-color: white;
-
+  color: white;
   max-width: 120px;
+  text-align: center;
   max-height: 80px;
   height: 2rem;
   line-height: 2rem;
