@@ -29,7 +29,7 @@ export default function Header() {
       <nav className={styles.navigation}>
         <img
           className={styles.hamberger}
-          onClick={handleHambergerMenu()}
+          onClick={() => handleHambergerMenu()}
           src={hambergerUrl}
           alt="hamberger"
         />
