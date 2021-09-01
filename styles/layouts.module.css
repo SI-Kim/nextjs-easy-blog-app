@@ -27,9 +27,13 @@
 }
 
 .header .navigation .hamberger {
+  max-width: 120px;
+  text-align: center;
+  max-height: 80px;
+  height: 2rem;
   line-height: 2rem;
   display: inline-block;
-  width: 30px;
+  min-width: 100px;
 }
 
 .main {
