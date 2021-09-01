@@ -16,7 +16,7 @@ export default function Header() {
     }
   ];
 
-  const handlehambergerMenu = () => {
+  const handleHambergerMenu = (event) => {
     console.log("햄버거메뉴 클릭");
   };
 
@@ -26,9 +26,12 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logoZone}>empty space for logo</div>
       <nav className={styles.navigation}>
-        <div className={styles.hamberger} onClick={handlehambergerMenu}>
-          <img src="../resource/image/hamberger_menu.png" alt="" />
-        </div>
+        <img
+          className={styles.item}
+          onClick={handleHambergerMenu()}
+          src="../resource/images/hamberger_menu.png"
+          alt=""
+        />
         {headerNav.map((data) => (
           <div key={data.id} className={styles.item}>
             <Link href={data.link}>{data.name}</Link>
