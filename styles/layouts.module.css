@@ -29,12 +29,10 @@
 .header .navigation .hamberger {
   max-width: 120px;
   text-align: center;
-  max-height: 80px;
-  height: 2rem;
-  width: 2rem;
+  width: 25px;
+  margin: 3px 3px 0 3px;
   line-height: 2rem;
   display: inline-block;
-  min-width: 100px;
 }
 
 .main {
