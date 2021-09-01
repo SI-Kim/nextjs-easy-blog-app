@@ -5,7 +5,7 @@ export default function Main() {
     <main className={styles.main}>
       <table>
         <tr>
-          <td>test</td>
+          <td>Main test</td>
         </tr>
       </table>
     </main>

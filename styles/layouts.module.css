@@ -22,6 +22,8 @@
   max-height: 80px;
   height: 2rem;
   line-height: 2rem;
+  display: inline-block;
+  min-width: 100px;
 }
 
 .main {
