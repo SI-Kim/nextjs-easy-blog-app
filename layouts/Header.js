@@ -15,13 +15,20 @@ export default function Header() {
       link: "/board1/MainBoard"
     }
   ];
+
+  const handlehambergerMenu = () => {
+    console.log("햄버거메뉴 클릭");
+  };
+
   headerNav.map((data) => console.log(data));
   console.log(headerNav[1]);
   return (
     <header className={styles.header}>
       <div className={styles.logoZone}>empty space for logo</div>
       <nav className={styles.navigation}>
-        <div className={styles.hamberger}>三</div>
+        <div className={styles.hamberger} onClick={handlehambergerMenu}>
+          三
+        </div>
         {headerNav.map((data) => (
           <div key={data.id} className={styles.item}>
             <Link href={data.link}>{data.name}</Link>
