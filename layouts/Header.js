@@ -27,7 +27,7 @@ export default function Header() {
       <div className={styles.logoZone}>empty space for logo</div>
       <nav className={styles.navigation}>
         <img
-          className={styles.item}
+          className={styles.hamberger}
           onClick={handleHambergerMenu()}
           src="../resource/images/hamberger_menu.png"
           alt=""

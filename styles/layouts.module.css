@@ -29,6 +29,7 @@
 .header .navigation .hamberger {
   line-height: 2rem;
   display: inline-block;
+  width: 30px;
 }
 
 .main {
