@@ -27,7 +27,7 @@ export default function Header() {
       <div className={styles.logoZone}>empty space for logo</div>
       <nav className={styles.navigation}>
         <div className={styles.hamberger} onClick={handlehambergerMenu}>
-          三
+          <img href="../resource/image/hamberger_menu.png" alt="" />
         </div>
         {headerNav.map((data) => (
           <div key={data.id} className={styles.item}>
