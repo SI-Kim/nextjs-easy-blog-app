@@ -1,6 +1,5 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
-import hambergerMenu from "../resource/images/hamberger_menu.png";
 
 export default function Header() {
   const headerNav = [
@@ -16,9 +15,11 @@ export default function Header() {
     }
   ];
 
-  const handleHambergerMenu = (event) => {
+  const handleHambergerMenu = () => {
     console.log("햄버거메뉴 클릭");
   };
+
+  const hambergerUrl = "/hamberger_menu.png";
 
   headerNav.map((data) => console.log(data));
   console.log(headerNav[1]);
@@ -29,8 +30,8 @@ export default function Header() {
         <img
           className={styles.hamberger}
           onClick={handleHambergerMenu()}
-          src={hambergerMenu}
-          alt=""
+          src={hambergerUrl}
+          alt="hamberger"
         />
         {headerNav.map((data) => (
           <div key={data.id} className={styles.item}>
