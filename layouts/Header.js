@@ -1,7 +1,6 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
 import jquery from "jquery";
-import $ from "jquery";
 
 export default function Header() {
   const headerNav = [
