@@ -1,6 +1,6 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
-import jquery from "jquery";
+import $ from "jquery";
 
 export default function Header() {
   const headerNav = [
@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   const handleHambergerMenu = () => {
-    $("");
+    console.log($(".aside"));
   };
 
   const hambergerUrl = "/hamberger_menu.png";
