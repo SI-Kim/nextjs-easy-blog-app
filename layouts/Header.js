@@ -1,5 +1,7 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
+import jquery from "jquery";
+import $ from "jquery";
 
 export default function Header() {
   const headerNav = [
@@ -16,7 +18,7 @@ export default function Header() {
   ];
 
   const handleHambergerMenu = () => {
-    console.log("햄버거메뉴 클릭");
+    $("");
   };
 
   const hambergerUrl = "/hamberger_menu.png";
