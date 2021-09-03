@@ -17,12 +17,13 @@ export default function Header() {
   ];
 
   const handleHambergerMenu = () => {
-    let sidebar = $(".aside");
+    let sidebar = $("aside");
+    console.log(sidebar);
     sidebar.animate(
       {
-        width: "100%"
+        width: "20%"
       },
-      2000,
+      1000,
       "swing"
     );
   };
