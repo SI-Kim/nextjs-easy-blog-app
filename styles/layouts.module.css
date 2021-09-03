@@ -48,9 +48,9 @@
 .main {
   display: block;
   width: 80%;
-  background: #aad;
   height: 100vh;
   float: right;
+  background-color: #d9d9d9;
 }
 
 .aside {
@@ -67,5 +67,6 @@
   width: 100%;
   height: 200px;
   height: 200px;
-  background: #a0a0a0;
+  background: black;
+  color: lightgray;
 }
