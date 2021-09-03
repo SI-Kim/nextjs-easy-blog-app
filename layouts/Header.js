@@ -3,6 +3,8 @@ import Link from "next/link";
 import $ from "jquery";
 
 export default function Header() {
+  let sidebarFlag = false;
+  let clickFlag = false;
   const headerNav = [
     {
       id: 1,
@@ -17,14 +19,27 @@ export default function Header() {
   ];
 
   const handleHambergerMenu = () => {
+    if (clickFlag) return;
+    clickFlag = true;
     let sidebar = $("aside");
-    console.log(sidebar);
+    let widthPercent = "20%";
+
+    if (sidebarFlag) {
+      widthPercent = "0%";
+      sidebarFlag = false;
+    } else {
+      widthPercent = "20%";
+      sidebarFlag = true;
+    }
+
     sidebar.animate(
       {
-        width: "20%"
+        width: widthPercent
       },
       1000,
-      "swing"
+      function () {
+        clickFlag = false;
+      }
     );
   };
 
