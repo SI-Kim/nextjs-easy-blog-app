@@ -44,12 +44,14 @@ export default function Header() {
   };
 
   const hambergerUrl = "/hamberger_menu.png";
-
+  const logoUrl = "/logo.png";
   headerNav.map((data) => console.log(data));
   console.log(headerNav[1]);
   return (
     <header className={styles.header}>
-      <div className={styles.logoZone}>empty space for logo</div>
+      <div className={styles.logoZone}>
+        <img src={logoUrl} alt="logo" className={styles.logo} />
+      </div>
       <nav className={styles.navigation}>
         <img
           className={styles.hamberger}
@@ -59,7 +61,9 @@ export default function Header() {
         />
         {headerNav.map((data) => (
           <div key={data.id} className={styles.item}>
-            <Link href={data.link}>{data.name}</Link>
+            <Link href={data.link}>
+              <b>{data.name}</b>
+            </Link>
           </div>
         ))}
         {/* <div className={styles.item}><Link href="/board1/MainBoard">MainBoard</Link></div> */}
