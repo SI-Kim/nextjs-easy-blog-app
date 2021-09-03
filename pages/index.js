@@ -1,3 +1,5 @@
+import styles from "../styles/layouts.module.css";
+
 export default function Home() {
-  return <div>Home</div>;
+  return <div className={styles.main}>Home</div>;
 }

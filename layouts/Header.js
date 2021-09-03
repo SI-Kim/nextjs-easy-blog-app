@@ -17,7 +17,14 @@ export default function Header() {
   ];
 
   const handleHambergerMenu = () => {
-    console.log($(".aside"));
+    let sidebar = $(".aside");
+    sidebar.animate(
+      {
+        width: "100%"
+      },
+      2000,
+      "swing"
+    );
   };
 
   const hambergerUrl = "/hamberger_menu.png";
