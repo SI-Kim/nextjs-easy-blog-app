@@ -45,8 +45,7 @@ export default function Header() {
 
   const hambergerUrl = "/hamberger_menu.png";
   const logoUrl = "/logo.png";
-  headerNav.map((data) => console.log(data));
-  console.log(headerNav[1]);
+
   return (
     <header className={styles.header}>
       <div className={styles.logoZone}>
