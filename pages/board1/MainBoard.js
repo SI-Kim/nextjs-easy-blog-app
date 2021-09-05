@@ -30,10 +30,12 @@ export default function MainBoard() {
     <div className={styles.main}>
       <Table>
         <TableHead>
-          <TableCell>번호</TableCell>
-          <TableCell>제목</TableCell>
-          <TableCell>날짜</TableCell>
-          <TableCell>작성자</TableCell>
+          <TableRow>
+            <TableCell>번호</TableCell>
+            <TableCell>제목</TableCell>
+            <TableCell>날짜</TableCell>
+            <TableCell>작성자</TableCell>
+          </TableRow>
         </TableHead>
         <TableBody>
           {mainBoardDatas.map((data) => (
