@@ -68,3 +68,10 @@
   background-color: black;
   color: lightgray;
 }
+
+@media (min-width: 414px) {
+  .main {
+    width: 100vw;
+    height: 100vh;
+  }
+}
