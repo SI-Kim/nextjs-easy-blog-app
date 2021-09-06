@@ -44,7 +44,7 @@ export default function Header() {
   };
 
   const hambergerUrl = "/hamberger_menu.png";
-  const logoUrl = "/logo.png";
+  const logoUrl = "/logo2.png";
 
   return (
     <header className={styles.header}>

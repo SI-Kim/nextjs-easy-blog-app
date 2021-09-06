@@ -8,6 +8,7 @@
 .header .logoZone {
   height: 5rem;
   line-height: 5rem;
+  text-align: center;
 }
 
 .header .navigation {
@@ -41,7 +42,7 @@
 }
 
 .header .logo {
-  width: 60px;
+  width: 150px;
   margin: 10px 10px 10px 10px;
 }
 
