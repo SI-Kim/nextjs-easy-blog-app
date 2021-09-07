@@ -64,7 +64,8 @@ export default function MainBoard() {
             style={{
               maxWidth: "240px",
               margin: "20px",
-              display: "inline-block"
+              display: "inline-block",
+              backgroundColor: "lightGrey"
             }}
           >
             <CardHeader
