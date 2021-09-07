@@ -1,10 +1,10 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
 import $ from "jquery";
+import { Button } from "@material-ui/core";
+import useState from "react";
 
 export default function Header() {
-  let sidebarFlag = false;
-  let clickFlag = false;
   const headerNav = [
     {
       id: 1,
@@ -18,50 +18,21 @@ export default function Header() {
     }
   ];
 
-  const handleHambergerMenu = () => {
-    if (clickFlag) return;
-    clickFlag = true;
-    let sidebar = $("aside");
-    let widthPercent = "20%";
-
-    if (sidebarFlag) {
-      widthPercent = "0%";
-      sidebarFlag = false;
-    } else {
-      widthPercent = "20%";
-      sidebarFlag = true;
-    }
-
-    sidebar.animate(
-      {
-        width: widthPercent
-      },
-      1000,
-      function () {
-        clickFlag = false;
-      }
-    );
+  const onhoverMenu = (event) => {
+    console.log(event);
   };
-
-  const hambergerUrl = "/hamberger_menu.png";
-  const logoUrl = "/logo2.png";
 
   return (
     <header className={styles.header}>
-      <div className={styles.logoZone}>
-        <img src={logoUrl} alt="logo" className={styles.logo} />
-      </div>
       <nav className={styles.navigation}>
-        <img
-          className={styles.hamberger}
-          onClick={() => handleHambergerMenu()}
-          src={hambergerUrl}
-          alt="hamberger"
-        />
         {headerNav.map((data) => (
-          <div key={data.id} className={styles.item}>
+          <div
+            key={data.id}
+            className={styles.item}
+            onMouseOver={() => onhoverMenu()}
+          >
             <Link href={data.link}>
-              <b>{data.name}</b>
+              <Button />
             </Link>
           </div>
         ))}
