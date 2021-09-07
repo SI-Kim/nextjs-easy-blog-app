@@ -58,20 +58,32 @@ export default function MainBoard() {
 
   return (
     <div className={styles.main}>
-      <Card style={{ maxWidth: "240px", margin: "20px" }}>
-        <CardHeader
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
-        ></CardHeader>
-        <CardMedia image="/logo2.png" title="Paella dish" />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
-          </Typography>
-        </CardContent>
-      </Card>
+      {mainBoardDatas.map((data) => {
+        return (
+          <Card
+            style={{
+              maxWidth: "240px",
+              margin: "20px",
+              display: "inline-block"
+            }}
+          >
+            <CardHeader
+              title={data.title.substr(0, 10)}
+              subheader={data.date}
+            ></CardHeader>
+            <CardMedia
+              image="/logo2.png"
+              title="logo2"
+              style={{ height: 0, paddingTop: "56.25%" }}
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {data.content}
+              </Typography>
+            </CardContent>
+          </Card>
+        );
+      })}
     </div>
   );
 }
