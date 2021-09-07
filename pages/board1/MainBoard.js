@@ -75,10 +75,15 @@ export default function MainBoard() {
             <CardMedia
               image="/logo2.png"
               title="logo2"
-              style={{ height: 0, paddingTop: "56.25%" }}
+              style={{ height: "120px", paddingTop: "56.25%" }}
             />
             <CardContent>
-              <Typography variant="body2" color="textSecondary" component="p">
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                style={{ height: "40px" }}
+              >
                 {data.content}
               </Typography>
             </CardContent>
