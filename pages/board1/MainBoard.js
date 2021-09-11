@@ -12,11 +12,8 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
+import Header from "../../layouts/Header";
 
 export default function MainBoard() {
   const mainBoardDatas = [
@@ -65,6 +62,8 @@ export default function MainBoard() {
   }))(TableRow);
 
   return (
+    <>
+    <Header />
     <div className={styles.main}>
       <div className={styles.boardBox}>
       {mainBoardDatas.map((data) => {
@@ -73,7 +72,7 @@ export default function MainBoard() {
           <Card
             className={styles.cardItem}
             key={data.id}
-            elevation={3}
+            elevation={2}
           >
             <CardHeader
               title={data.title.substr(0, 10)}
@@ -100,5 +99,6 @@ export default function MainBoard() {
       })}
       </div>
     </div>
+    </>
   );
 }

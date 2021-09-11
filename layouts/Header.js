@@ -1,8 +1,6 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
-import $ from "jquery";
 import { Button } from "@material-ui/core";
-import useState from "react";
 
 export default function Header() {
   const headerNav = [
