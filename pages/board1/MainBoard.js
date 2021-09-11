@@ -35,6 +35,14 @@ export default function MainBoard() {
       content: "더미데이터 내용 2 sdafjlkasjdlfksdfa",
       author: "asdfkljasdllfksjd",
       link: "/board1/MainBoard"
+    },
+    {
+      id: 3,
+      date: "2021-03-03",
+      title: "더미데이터 제목 2asdfojhjasdlkfsad",
+      content: "더미데이터 내용 2 sdafjlkasjdlfksdfa",
+      author: "asdfkljasdllfksjd",
+      link: "/board1/MainBoard"
     }
   ];
 
@@ -58,31 +66,31 @@ export default function MainBoard() {
 
   return (
     <div className={styles.main}>
+      <div className={styles.boardBox}>
       {mainBoardDatas.map((data) => {
+        
         return (
           <Card
-            style={{
-              maxWidth: "240px",
-              margin: "20px",
-              display: "inline-block",
-              backgroundColor: "lightGrey"
-            }}
+            className={styles.cardItem}
+            key={data.id}
+            elevation={3}
           >
             <CardHeader
               title={data.title.substr(0, 10)}
               subheader={data.date}
+              className={styles.cardHeader}
             ></CardHeader>
             <CardMedia
               image="/logo2.png"
               title="logo2"
-              style={{ height: "120px", paddingTop: "56.25%" }}
+              className={styles.cardMedia}
             />
             <CardContent>
               <Typography
                 variant="body2"
                 color="textSecondary"
                 component="p"
-                style={{ height: "40px" }}
+                className={styles.cardContent}
               >
                 {data.content}
               </Typography>
@@ -90,6 +98,7 @@ export default function MainBoard() {
           </Card>
         );
       })}
+      </div>
     </div>
   );
 }
