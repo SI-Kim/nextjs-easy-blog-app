@@ -7,13 +7,18 @@ import useState from "react";
 export default function Header() {
   const headerNav = [
     {
-      id: 1,
-      name: "메인게시판",
-      link: "/board1/MainBoard"
+        id: 1,
+        name: "Home",
+        link: "/"    
     },
     {
       id: 2,
-      name: "더미버튼",
+      name: "Board",
+      link: "/board1/MainBoard"
+    },
+    {
+      id: 3,
+      name: "Dummy",
       link: "/board1/MainBoard"
     }
   ];
@@ -32,7 +37,7 @@ export default function Header() {
             onMouseOver={() => onhoverMenu()}
           >
             <Link href={data.link}>
-              <Button />
+              <Button style={{ color: "white;" }}><b>{data.name}</b></Button>
             </Link>
           </div>
         ))}
