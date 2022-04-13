@@ -1,15 +1,13 @@
 import styles from "../styles/layouts.module.css";
 import Link from "next/link";
-import $ from "jquery";
 import { Button } from "@material-ui/core";
-import useState from "react";
 
 export default function Header() {
   const headerNav = [
     {
-        id: 1,
-        name: "Home",
-        link: "/"    
+      id: 1,
+      name: "Home",
+      link: "/"
     },
     {
       id: 2,
@@ -37,7 +35,9 @@ export default function Header() {
             onMouseOver={() => onhoverMenu()}
           >
             <Link href={data.link}>
-              <Button style={{ color: "white;" }}><b>{data.name}</b></Button>
+              <Button style={{ color: "white;" }}>
+                <b>{data.name}</b>
+              </Button>
             </Link>
           </div>
         ))}
